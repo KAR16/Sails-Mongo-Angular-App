@@ -34,6 +34,21 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+  '/vista':{
+    view: 'view'
+  },
+  '/user/login':{
+    controller:'UserController', action:'singin'
+  },
+  '/user/singin':{
+    controller: 'UserController', action:'insert'
+  },
+  'POST /user/list':{
+    controller:'UserController', action: 'viewList'
+  },
+  '/user/table_user':{
+    view: 'user/table'
   }
 
   /***************************************************************************

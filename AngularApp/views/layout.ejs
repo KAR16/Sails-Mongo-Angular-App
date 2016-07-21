@@ -28,11 +28,37 @@
             + Use a different or additional preprocessor, like SASS, SCSS or Stylus
     -->
 
-    <!--STYLES-->
-    <!--STYLES END-->
+
+  <link rel="stylesheet" href="/styles/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/importer.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <nav class="navbar navbar-default navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Sails Tutorial</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 0.909090876579285px;">
+          <!-- Filters -->
+          <ul class="nav navbar-nav filters">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/vista">View</a></li>
+            <li><a href="/user">User</a></li>
+            <li><a href="/user/list">User List</a></li>
+            <li><a href="/user/login">Singin</a></li>
+            <li class="table_user"><a href="/user/table_user">Table User</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav>
   </head>
 
-  <body>
+  <body ng-app="userList" ng-controller="myCtl">
     <%- body %>
 
 
@@ -59,6 +85,7 @@
     -->
 
     <!--TEMPLATES-->
+    
     <!--TEMPLATES END-->
 
 
@@ -84,8 +111,8 @@
           + Use a different preprocessor, like TypeScript
 
     -->
-
-    <!--SCRIPTS-->
-    <!--SCRIPTS END-->
+  <script src="/js/Controller.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>
